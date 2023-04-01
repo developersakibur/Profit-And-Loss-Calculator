@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profit and Loss Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <h3>Total Purchase</h3>
+            </td>
+            <td><input type="number" id="buyCost" placeholder="Buy Cost" min="0" value="2" /></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Total Sale</h3>
+            </td>
+            <td><input type="number" id="sellCost" placeholder="Sell Cost" min="0" value="1" /></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Total Product</h3>
+            </td>
+            <td><input type="number" id="quantity" placeholder="Quantity" min="1" value="01" /></td>
+        </tr>
+        <tr>
+            <td>
+                <h3 id="pol">Total Profit/Loss</h3>
+            </td>
+            <td><input type="text" id="profitOrLoss" placeholder="Profit Or Loss" value="0.00 $" readonly="readonly" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3 id="tip">Total In Percent</h3>
+            </td>
+            <td><input type="text" id="percent" placeholder="Percent" value="0.00 %" readonly="readonly" /></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="reset()">Reset</button></td>
+            <td><button type="button" onclick="result()">Result</button></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
